@@ -1,0 +1,84 @@
+footer{
+    margin-top: 10vmax;
+/*  this below line of code is for sticky footer */
+    /* position: sticky;
+    top: 100%; */
+
+    padding: 2vmax;
+    background-color: rgba(34, 33, 33);
+    color: white;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.Lfooter{
+    width: 20%;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.images{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.images > a{
+    text-decoration: none;
+    margin: 1vmax;
+}
+.images > a > img{
+    width: 30px;
+    cursor: pointer;
+}
+.Lfooter > h4 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Lfooter > p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.Mfooter{
+    width: 60%;
+
+    text-align: center;
+}
+.Mfooter > h2{
+    font-size: 3vmax;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: crimson;
+}
+.Mfooter > p {
+    max-width: 60%;
+
+    margin: 1vmax auto;
+}
+
+.Rfooter{
+    width: 20%;
+
+    text-align: center;
+
+}
+.Rfooter > a{
+    text-decoration: none;
+}
+.Rfooter > a > img{
+    width: 30px;
+    margin: 1vmax;
+    cursor: pointer;
+}
+.Rfooter > h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.4vmax;
+    text-decoration: underline;
+}
+@media screen and (max-width: 600px) {
+    
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

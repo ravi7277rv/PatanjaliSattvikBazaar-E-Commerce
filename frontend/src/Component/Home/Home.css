@@ -1,0 +1,144 @@
+.banner {
+    background-color:rgb(211, 213, 118) ;
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+.banner > h1{
+    margin: 50px;
+
+    font: 30px 2.5vmax "Roboto";
+}
+.banner > p {
+    font: 30px 2.5vmax "Roboto";
+}
+.banner > a > button {
+    margin-bottom: 50px;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    padding: 10px;
+    transition: all 0.5s;
+    width: 90px;
+    font: 500 10px "Roboto" ;
+}
+.banner::after{
+    content: "";
+    width: 100vw;
+    height: 100vmin;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    max-width: 100%;
+    clip-path: polygon(100% 44%, 0% 100%, 100% 100%);
+
+}
+.homeHeading{
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 20px;
+    border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+    width: 200px;
+    padding: 10px;
+    margin: 50px auto;
+    color: rgba(0, 0, 0,0.7);
+}
+.container {
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  }
+.productCard{
+    width: 250px;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color:rgb(75, 176, 8);
+    margin: 20px;
+    transition: all 0.5s;
+    padding-bottom: 5px;
+    background-color: rgb(218, 221, 161);
+    border-radius: 20px;
+}
+.images{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.images > img {
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+}
+.productCard > div{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.productCard > div > span {
+    margin: 8px;
+    font: 300 15px "Roboto";
+}
+.productCard > p{
+    font-family: "Roboto";
+    font-size: 15px;
+    margin: 10px 5px;
+    margin-bottom: 0;
+}
+.productCard > span {
+    margin:5px;
+    color: rgb(75, 176, 8);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:15px;
+}
+.productCard:hover{
+    box-shadow: 0 0 20px #ffffffcc;
+
+    transform: translateY(-10px);
+}
+
+
+@media screen and (max-width: 600px){
+    .productCard > p {
+        font-size: 17px;
+    }
+
+    .productCard > div {
+        margin: 0px;
+        display: block;
+    }
+
+    .productCard > span {
+        font-size: 15px;
+    }
+
+    .productCard > div > span{
+        margin: 0 5px;
+    }
+
+    .images > img {
+        width: 200px;
+        height: 250px;
+        margin-top: 25px;
+       margin-left: 5px;
+    }
+}
+
+
+
+
+
+

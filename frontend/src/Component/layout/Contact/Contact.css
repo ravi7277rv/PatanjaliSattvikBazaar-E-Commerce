@@ -1,0 +1,93 @@
+.centerdisplay{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+.contactway{
+  width: 250px;
+  height: 430px;
+  margin: 20px;
+  background-color: aquamarine;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.owner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.owner>h3{
+  color: darkorange;
+  font-size: 20px;
+}
+.owner>p{
+  color:rgba(255, 140, 0, 0.63) ;
+}
+.location{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.location>h3{
+  color: chocolate;
+}
+.location>p{
+  color: rgb(121, 118, 118);
+  padding: 5px 5px;
+}
+.contact-page{
+  background-color: bisque;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 20px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+form label{
+  color: darkgoldenrod;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+}
+form input[type=email]{
+  border: 2px inset;
+}
+form input[type=text]{
+  border: 2px inset;
+}
+
+form textarea{
+  border: 2px inset;
+  margin-bottom:10px;
+}
+form input[type=submit]{
+  background-color: yellowgreen;
+  border: none;
+  padding: 5px;
+  width: 50%;
+  font-size: 18px;
+  color: whitesmoke;
+  border-radius: 10px;
+  cursor: pointer;
+}
+h2{
+  color: rgb(167, 42, 42);
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .centerdisplay {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
